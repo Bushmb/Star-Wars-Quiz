@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars Quiz</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div id="main">
+        <h1>STAR WARS QUIZ</h1>
+        <div class="txtStatusBar" id="txtStatusBar"></div>
+        <div class="questionContainer" style="display: block;">
+          <div class="question"><strong>Question 1 :</strong> Billy Dee Williams plays which character in the Star Wars films?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q1-a" name="q1" /> Kylo Ren</label></li>
+                <li><label><input type="radio" id="q1-b" name="q1" /> Darth Cognus</label></li>
+                <li><label><input type="radio" id="q1-c" name="q1" /> Anakin Skywalker</label></li>
+                <li><label><input type="radio" id="q1-d" name="q1" /> Lando Calrissian</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="prev"></div>
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 2 :</strong> The Tibanna gas mining colony "Cloud City" lies on which planet?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q2-a" name="q2" /> Mespin</label></li>
+                <li><label><input type="radio" id="q2-b" name="q2" /> Despin</label></li>
+                <li><label><input type="radio" id="q2-c" name="q2" /> Lespin</label></li>
+                <li><label><input type="radio" id="q2-d" name="q2" /> Bespin</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 3 :</strong> How many languages are we told the humanoid robot character C-3PO speaks?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q3-a" name="q3" /> 17,000</label></li>
+                <li><label><input type="radio" id="q3-b" name="q3" /> 6 Million</label></li>
+                <li><label><input type="radio" id="q3-c" name="q3" /> 22 Million</label></li>
+                <li><label><input type="radio" id="q3-d" name="q3" /> 7</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 4 :</strong> Who does Boba Fett deliver a frozen Han Solo to?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q4-a" name="q4" /> Emperor Palpatine</label></li>
+                <li><label><input type="radio" id="q4-b" name="q4" /> Jabba the Hutt</label></li>
+                <li><label><input type="radio" id="q4-c" name="q4" /> Darth Maul</label></li>
+                <li><label><input type="radio" id="q4-d" name="q4" /> Darth Vader</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 5 :</strong> Who has the description of "species unknown" in the Star Wars databank?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q5-a" name="q5" /> Yoda</label></li>
+                <li><label><input type="radio" id="q5-b" name="q5" /> Darth Maul</label></li>
+                <li><label><input type="radio" id="q5-c" name="q5" /> Chewbacca</label></li>
+                <li><label><input type="radio" id="q5-d" name="q5" /> Obi-Wan Kenobi</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 6 :</strong> Which of the following Star Wars films was the second to be released?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q6-a" name="q6" /> The Attack of the Clones</label></li>
+                <li><label><input type="radio" id="q6-b" name="q6" /> The Return of the Jedi</label></li>
+                <li><label><input type="radio" id="q6-c" name="q6" /> A New Hope</label></li>
+                <li><label><input type="radio" id="q6-d" name="q6" /> The Empire Strikes Back</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 7 :</strong> Which character in "The Force Awakens" has a surname of "Ren"?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q7-a" name="q7" /> Poe</label></li>
+                <li><label><input type="radio" id="q7-b" name="q7" /> Finn</label></li>
+                <li><label><input type="radio" id="q7-c" name="q7" /> Kylo</label></li>
+                <li><label><input type="radio" id="q7-d" name="q7" /> Rey</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 8 :</strong> Jar Jar Binks makes his first appearance in what Star Wars movie?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q8-a" name="q8" /> Return of the Jedi</label></li>
+                <li><label><input type="radio" id="q8-b" name="q8" /> Revenge of the Sith</label></li>
+                <li><label><input type="radio" id="q8-c" name="q8" /> Attack of the Clones</label></li>
+                <li><label><input type="radio" id="q8-d" name="q8" /> The Phantom Menace</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 9 :</strong> Darth Vader leads a squad of what type of spaceships in "A New Hope"?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q9-a" name="q9" /> Outriders</label></li>
+                <li><label><input type="radio" id="q9-b" name="q9" /> Sith Infiltrators</label></li>
+                <li><label><input type="radio" id="q9-c" name="q9" /> Viragos</label></li>
+                <li><label><input type="radio" id="q9-d" name="q9" /> TIE Fighters</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <div class="next"><a class="btnNext hide">Next</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="questionContainer hide">
+          <div class="question"><strong>Question 10 :</strong> How many years after "A New Hope" is The Empire Strikes Back set?</div>
+          <div class="answers">
+            <ul><li><label><input type="radio" id="q10-a" name="q10" /> 1</label></li>
+                <li><label><input type="radio" id="q10-b" name="q10" /> 6</label></li>
+                <li><label><input type="radio" id="q10-c" name="q10" /> 8</label></li>
+                <li><label><input type="radio" id="q10-d" name="q10" /> 3</label></li>
+            </ul>
+          </div>
+          <div class="btnContainer">
+            <div class="submit"><a class="btnSubmit">Submit</a></div>
+            <!-- <div class="next"><a class="btnNext hide">Next</a></div> -->
+            <div class="next"><a class="btnFinish hide">Finish</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        
+        
+        <div id="progressContainer" style="display: block;">
+          <div id="progress"></div>
+        </div>
+        <div class="userScoreBar" id="userScoreBar"></div>
+        <div id="errContainer">
+          <span class="errMsg hide"><strong>PLEASE SELECT AN ANSWER</strong></span>
+        </div>
+        <div class="hide" id="resultContainer"></div>
+      </div>
+
+        <div class="btnContainerStart hide"><a id="btnStart">Start Over</a></div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>

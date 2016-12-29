@@ -1,0 +1,306 @@
+/* Reset browser styles */
+h1, h2, p, div, ul, ol, li, code, pre, html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight:   normal;
+}
+
+@font-face {
+
+    font-family:"STARWARS";
+
+    src:url("STARWARS.eot?") format("eot"),
+        url("STARWARS.woff") format("woff"),
+        url("STARWARS.ttf") format("truetype"),
+        url("STARWARS.svg#STARWARS") format("svg");
+        font-weight:normal;
+        font-style:normal;
+}
+
+body {
+  background-color: #58657a;
+  background-image: url("space.jpg");
+  background-size: 1440px;
+}
+
+/*.txtStatusBar { 
+  font-weight:bold;
+  margin:5px 0px;
+}*/
+
+#txtStatusBar {
+  font-weight:bold;
+  margin:5px 0px;
+}
+
+.content {
+  background-color: #58657a;
+  border:2px solid black;
+  float:left;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  width: 730px;
+  display: inline-block;
+
+}
+
+h1 { 
+  margin-top: 20px;
+  font-size: 400%;
+  font-weight:bold;
+  text-align: center;
+  color: yellow;
+  font-family: "STARWARS";
+}
+
+.questionContainer {
+  background:white;
+  border:3px double black;
+  border-radius: 8px;
+  margin:10px auto;
+  padding:3px;
+  width:720px;
+
+}
+
+.questionContainer li {margin:5px 5px;}
+
+.question {font-size: 120%;}
+
+.btnContainer {
+  margin:10px 0 10px 1%;
+  width:98%;
+}
+
+.btnContainerStart {
+  margin:10px 10px;
+  text-align: center;
+}
+
+.prev{float:left;}
+.prev a, .submit a, .next a{
+  background:none repeat scroll 0 0 white;
+  border:1px solid #000000;
+  border-radius: 4px;
+  cursor:pointer;
+  font-size:10px;
+  font-weight:bold;
+  padding:2px 5px;
+}
+.submit a:hover, .next a:hover{
+  background:none repeat scroll 0 0 #00ce4f;
+  color:white !important;
+  text-decoration:none !important;
+}
+
+.prev a:hover {
+  background:none repeat scroll 0 0 #ba2005;
+  color:white !important;
+  text-decoration:none !important;
+}
+
+#btnStart {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*align-content: center;*/
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 10px auto;
+    cursor:pointer;
+}
+
+
+#btnStart:hover {
+    box-shadow: 0px 0px 35px 6px rgba(255,255,255,0.58);
+    color:black;
+}
+
+
+.submit, .next, .btnFinish {float:right;}
+.clear {clear:both;}
+
+
+.txtStatusBar { 
+  font-weight:bold;
+  margin:5px auto;
+  text-align: center;
+  color: white;
+  font-family: "STARWARS";
+
+}
+.userScoreBar { 
+  font-weight:bold;
+  margin:10px auto;
+  text-align: center;
+  color: yellow;
+  font-family: "STARWARS";
+}
+
+
+
+/*#progress {
+  background:none repeat scroll 0 0 #36648B;
+  height:25px;
+  width:0;
+}*/
+
+#errContainer {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.hide {display:none;}
+.answers ul li {list-style:none outside none;}
+.clear{clear:both;}
+input {
+  position:relative;
+  top:2px;
+}
+#resultContainer {
+  background:white;
+  border:3px double black;
+  border-radius: 8px;
+  text-align: center;
+  margin:10px auto;
+  padding:3px;
+  width:720px;
+}
+#resultContainer div {
+  line-height:30px;
+  margin-bottom: 10px
+}
+
+/* Error message */
+.errMsg {
+  width: 200px;
+  margin: 5px auto;
+  text-align: center;
+  color:red;
+  margin:5px 10px;
+  font-family: "STARWARS";
+  font-size: 150%;
+}
+
+.correctResult {
+  color: green;
+  font-size: 30px; 
+  font-style: bold;
+  margin: 2px 0;
+}
+
+.wrongResult {
+  color: red;
+  font-size: 30px;
+  font-style: bold;
+  margin: 2px 0;
+}
+
+/*#progressContainer { 
+  background:white; 
+  border:3px double black;
+  height:25px;
+  margin:0px auto;
+  padding:3px;
+  width:720px;
+
+}*/
+
+#progressContainer {
+  /*margin-top: 10%;
+  position: relative;
+  display: block;*/
+  margin: 0px auto;
+  height: 10px;
+  padding: 3px;
+  width: 720px;
+  background: none;
+  
+  -webkit-transition: 2s linear;
+  -moz-transition: 2s linear;
+  -ms-transition: 2s linear;
+  -o-transition: 2s linear;
+  transition: 2s linear;
+  
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+  
+  filter: blur(1px);
+  -moz-filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+}
+
+#progress.red {
+  height: 10px;
+  width: 0px;
+  background: red;
+  border-radius: 0 12px 12px 0;
+  
+  background: -webkit-linear-gradient(top, rgba(229, 17, 21, 1) 0%, rgba(254, 254, 254, 1) 30%, rgba(254, 254, 254, 1) 0%, rgba(254, 254, 254, 1) 60%, rgba(229, 17, 21, 1) 100%);
+  
+
+
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(255,56,56,1);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(255,56,56,1);
+  box-shadow: 0px 0px 8px 2px rgba(255,56,56,1);
+}
+
+#progress.green {
+  height: 10px;
+  width: 0px;
+  background: green;
+  border-radius: 0 12px 12px 0;
+  
+  background: -webkit-linear-gradient(top, rgba(0, 253, 21, 1) 0%, rgba(254, 254, 254, 1) 30%, rgba(254, 254, 254, 1) 0%, rgba(254, 254, 254, 1) 60%, rgba(0, 253, 21, 1) 100%);
+  
+
+
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(56,255,56,1);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(56,255,56,1);
+  box-shadow: 0px 0px 8px 2px rgba(56,255,56,1);
+}
+
+.jedi {
+  font-family: "STARWARS";
+  font-size: 150%;
+  color: green;
+  margin-top: 10px;
+}
+
+.sith {
+  font-family: "STARWARS";
+  font-size: 150%;
+  color: red;
+  margin-top: 10px;
+}
+
+.undecided {
+  font-family: "STARWARS";
+  font-size: 150%;
+  color: purple;
+  margin-top: 10px;
+}
+
+.green {
+  color: green;
+  font-style: bold;
+}
+
+.red {
+  color: red;
+  font-style: bold;
+}
+
+

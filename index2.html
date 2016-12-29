@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Quiz</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+  <div id="main">
+    <h1>Simple Quiz</h1>
+    <div class="questionContainer">
+      <div class="btnContainer">
+        <div class="prev"></div>
+        <div class="next"><a class="btnNext">Next ++</a></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="questionContainer">
+      <div class="btnContainer">
+        <div class="prev"><a class="btnPrev">-- Prev</a></div>
+        <div class="next"><a class="btnNext">Next ++</a></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="questionContainer">
+      <div class="btnContainer">
+        <div class="prev"><a class="btnPrev">-- Prev</a></div>
+        <div class="next"><a class="btnShowResult">Finish</a></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="txtStatusBar">Quiz Progress Bar 
+        <span class="errMsg hide"><strong>Please select an answer</strong></span></div>
+    <div id="progressContainer" style="display: block;">
+      <div id="progress"></div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="app3.js"></script>
+
+  </body>
+</html>
